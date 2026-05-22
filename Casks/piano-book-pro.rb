@@ -2,15 +2,14 @@ cask "piano-book-pro" do
   version "0.1.0"
   sha256 "5146532dab2a7ee2a4a21dd0aa4b69183eef925f6e909d87e87c414e2a202279"
 
-  url "https://github.com/ivanrulik/piano_book_pro/releases/download/v#{version}/PianoBookPro-#{version}.zip",
-      verified: "github.com/ivanrulik/piano_book_pro/"
+  url "https://github.com/ivanrulik/homebrew-tap/releases/download/piano-book-pro-v#{version}/PianoBookPro-#{version}.zip"
   name "Piano Book Pro"
   desc "Menu-bar app that turns your typing into piano"
-  homepage "https://github.com/ivanrulik/piano_book_pro"
+  homepage "https://github.com/ivanrulik/homebrew-tap"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://github.com/ivanrulik/homebrew-tap/releases.atom"
+    regex(/piano-book-pro[-_]v?(\d+(?:\.\d+)+)/i)
   end
 
   depends_on macos: :sonoma
