@@ -1,6 +1,6 @@
 cask "piano-book-pro" do
-  version "0.1.0"
-  sha256 "5146532dab2a7ee2a4a21dd0aa4b69183eef925f6e909d87e87c414e2a202279"
+  version "0.1.1"
+  sha256 "695446f4d96fc7e868419cada2db507dba671a5068b3c742e096c5e354ff8451"
 
   url "https://github.com/ivanrulik/homebrew-tap/releases/download/piano-book-pro-v#{version}/PianoBookPro-#{version}.zip"
   name "Piano Book Pro"
